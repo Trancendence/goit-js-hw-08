@@ -4,7 +4,7 @@ const LOCALSTORAGE_KEY = 'selectedFilters';
 const formEl = document.querySelector('.feedback-form');
 
 
-// initForm();
+initForm();
 
 formEl.addEventListener('submit', onFormSubmit);
 formEl.addEventListener('input', throttle(onFormInput, 500));
@@ -32,7 +32,5 @@ function initForm() {
       formEl.elements[name].value = value;
     });
   }
-
-  initForm();
 }
 
